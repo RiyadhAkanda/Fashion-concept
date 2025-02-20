@@ -2,115 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fashion Concept</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
 
-
+<!-- Navigation (left) -->
 <nav class="nav nav--left js-nav">
   <ul>
-    <li>
-      <a href="#"><span>Mens</span></a>
-    </li>
-    <li>
-      <a href="#"><span>Womens</span></a>
-    </li>
-    <li>
-      <a href="#" class="is-active"><span>Collections</span></a>
-    </li>
+    <li><a href="#"><span>Mens</span></a></li>
+    <li><a href="#"><span>Womens</span></a></li>
+    <li><a href="#" class="is-active"><span>Collections</span></a></li>
   </ul>
 </nav>
 
+<!-- Logo -->
 <figure class="logo">
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/logo_copy_copy.svg">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/logo_copy_copy.svg" alt="Logo">
 </figure>
 
+<!-- Navigation (right) -->
 <nav class="nav nav--right">
   <ul>
-    <li>
-      <a href="https://twitter.com/Jesper_Landberg?lang=en" target="_blank"><span>Say hi</span></a>
-    </li>
-    <li>
-      <a href="#">
-        <span>Cart</span>
-        <div class="cart-total">0</div>
-      </a>
-    </li>
+    <li><a href="https://twitter.com/Jesper_Landberg?lang=en" target="_blank"><span>Say hi</span></a></li>
+    <li><a href="#"><span>Cart</span><div class="cart-total">0</div></a></li>
   </ul>
 </nav>
 
+<!-- Slider -->
 <div class="slider js-slider">
   <div class="slider__inner js-slider__inner"></div>
-  
+
+  <!-- Slide 1 -->
   <div class="slide js-slide">
     <div class="slide__content">
       <figure class="slide__img js-slide__img">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo1.jpg">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo1.jpg" alt="Image 1">
       </figure>
-       <figure class="slide__img js-slide__img">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg">
+      <figure class="slide__img js-slide__img">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg" alt="Image 2">
       </figure>
     </div>
-    
     <div class="slider__text js-slider__text">
       <div class="slider__text-line js-slider__text-line"><div>Black is</div></div>
       <div class="slider__text-line js-slider__text-line"><div>timeless. Black is</div></div>
       <div class="slider__text-line js-slider__text-line"><div>the colour of</div></div>
       <div class="slider__text-line js-slider__text-line"><div>Eternity.</div></div>
     </div>
-    
   </div>
-  
+
+  <!-- Slide 2 -->
   <div class="slide js-slide">
     <div class="slide__content">
       <figure class="slide__img js-slide__img">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo3.jpg">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo3.jpg" alt="Image 3">
       </figure>
-       <figure class="slide__img js-slide__img">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo4.jpg">
+      <figure class="slide__img js-slide__img">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo4.jpg" alt="Image 4">
       </figure>
     </div>
   </div>
-  
+
+  <!-- Slide 3 -->
   <div class="slide js-slide">
     <div class="slide__content">
       <figure class="slide__img js-slide__img">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo5.jpg">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo5.jpg" alt="Image 5">
       </figure>
-       <figure class="slide__img js-slide__img">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo6.jpg">
+      <figure class="slide__img js-slide__img">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo6.jpg" alt="Image 6">
       </figure>
     </div>
   </div>
-  
+
+  <!-- Navigation Bullets -->
   <nav class="slider__nav js-slider__nav">
     <div class="slider-bullet js-slider-bullet">
       <span class="slider-bullet__text js-slider-bullet__text">01</span>
       <span class="slider-bullet__line js-slider-bullet__line"></span>
     </div>
-     <div class="slider-bullet js-slider-bullet">
+    <div class="slider-bullet js-slider-bullet">
       <span class="slider-bullet__text js-slider-bullet__text">02</span>
       <span class="slider-bullet__line js-slider-bullet__line"></span>
     </div>
-     <div class="slider-bullet js-slider-bullet">
+    <div class="slider-bullet js-slider-bullet">
       <span class="slider-bullet__text js-slider-bullet__text">03</span>
       <span class="slider-bullet__line js-slider-bullet__line"></span>
     </div>
   </nav>
-  
+
   <div class="scroll js-scroll">Scroll</div>
-  
 </div>
 
+<!-- Vertical Text -->
 <div class="vert-text">
   <span>
     Wings+Horns<br>
     X Kyoto Black
   </span>
 </div>
-  
-  <!-- Link to JavaScript file -->
-<script src="script.js"></script>
+
+<!-- JavaScript file -->
+<script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
